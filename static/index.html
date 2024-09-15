@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Subtitles Search</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Youtube Subtitles Search</h1>
+      <div id="search-container">
+        <!-- TODO: remove the value attribute -->
+        <input
+          type="text"
+          id="youtubeUrl"
+          placeholder="Enter Youtube Video URL"
+          value="https://www.youtube.com/watch?v=xG-Ef4ig07I"
+        />
+        <button id="goButton" disabled>Go</button>
+      </div>
+      <div id="transcript-container">
+        <div id="video-container">
+          <div id="youtube-video">
+            <iframe
+              width="200"
+              height="315"
+              src="https://www.youtube.com/embed/cWJV0DgMqEA?si=VuLGiCUx9D2p69SV"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div id="transcript">
+            <ul id="transcript-list">
+              <li>
+                <span class="ts-id">0</span>
+                <span class="timecode">00:00</span>
+                <span class="text">Hello, world!</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="static/js/app.js"></script>
+</html>
